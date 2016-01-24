@@ -1,0 +1,8 @@
+{
+  "name": "smsc",
+  "version": "0.0.1",
+  "description": "run commands on your server remotely with sms",
+  "dependencies": {
+    "chalk": "^1.1.1"
+  }
+}
