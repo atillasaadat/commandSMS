@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="ca.menushka.commandsms.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"/>
+
+
+    <customview.Terminal
+        android:id="@+id/terminal"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"/>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"/>
+
+    <Button
+        android:id="@+id/up"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.3"
+        android:clickable="true"
+        android:onClick="up"/>
+
+    <Button
+        android:id="@+id/down"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/up"
+        android:alpha="0.3"
+        android:clickable="true"
+        android:onClick="down" />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="25dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/down"
+        android:alpha="0.3"
+        android:clickable="true"
+        android:onClick="right" />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="25dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/down"
+        android:layout_toLeftOf="@+id/right"
+        android:alpha="0.3"
+        android:clickable="true"
+        android:onClick="left" />
+
+</RelativeLayout>
